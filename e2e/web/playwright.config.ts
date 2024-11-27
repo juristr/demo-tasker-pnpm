@@ -36,6 +36,6 @@ export default defineConfig({
     // command: 'pnpm --filter "@tasker/web" start',
     command: 'pnpm nx start @tasker/web',
     url: 'http://localhost:3000',
-    reuseExistingServer: true,
+    reuseExistingServer: false,
   },
 });
