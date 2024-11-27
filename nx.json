@@ -6,16 +6,9 @@
       "outputs": ["{projectRoot}/.next"],
       "cache": true
     },
-    "e2e": {
-      "dependsOn": ["^build"],
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    }
+    "e2e": { "dependsOn": ["^build"], "cache": true },
+    "lint": { "cache": true },
+    "test": { "cache": true }
   },
   "defaultBase": "main",
   "namedInputs": {
@@ -25,9 +18,9 @@
   "plugins": [
     {
       "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "playwright:e2e"
-      }
+      "options": { "targetName": "playwright:e2e" }
     }
-  ]
+  ],
+  "nxCloudId": "6747999cb320693de30a521c",
+  "nxCloudUrl": "https://staging.nx.app"
 }
