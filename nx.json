@@ -6,19 +6,31 @@
       "outputs": ["{projectRoot}/.next"],
       "cache": true
     },
-    "e2e": { "dependsOn": ["^build"], "cache": true },
-    "lint": { "cache": true },
-    "test": { "cache": true }
+    "e2e": {
+      "dependsOn": ["^build"],
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
   },
   "defaultBase": "main",
   "namedInputs": {
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/verify.yml"],
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/verify.yml",
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ],
     "default": ["sharedGlobals"]
   },
   "plugins": [
     {
       "plugin": "@nx/playwright/plugin",
-      "options": { "targetName": "playwright:e2e" }
+      "options": {
+        "targetName": "playwright:e2e"
+      }
     }
   ],
   "nxCloudId": "674880b41abeb32ff7009d25"
