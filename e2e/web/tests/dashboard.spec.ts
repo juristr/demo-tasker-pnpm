@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { login } from './helpers/auth-helper';
 import { createTask } from './helpers/task-helper';
 
-test('Dashboard Test: Title', async ({ page }) => {
+test('Dashboard Test: Title test', async ({ page }) => {
   await login(page);
   await page.goto('/dashboard');
 
