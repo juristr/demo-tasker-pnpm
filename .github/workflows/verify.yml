@@ -24,7 +24,7 @@ jobs:
           version: 9.9.0 # temporary fix for Nx Cloud PNPM version detection
           run_install: false
 
-      # - run: pnpm dlx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
+      - run: pnpm dlx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e"
 
       - name: Install dependencies
         run: pnpm install
